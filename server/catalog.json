@@ -3,7 +3,7 @@
         "id": "el1",
         "name": "FENDER SQUIER BULLET STRAT HT HSS BLK",
         "img": "https://i.ibb.co/QJfqs4K/1.jpg",
-        "price": 1360
+        "price": 136
     },
     {
         "id": "el2",
@@ -15,7 +15,7 @@
         "id": "el3",
         "name": "IBANEZ GIO GRG121DX-BKF BLACK FLAT",
         "img": "https://i.ibb.co/NnvcYhR/3.jpg",
-        "price": 2160
+        "price": 216
     },
     {
         "id": "el4",
@@ -33,7 +33,7 @@
         "id": "el6",
         "name": "FENDER SQUIER BULLET MUSTANG HH BLK",
         "img": "https://i.ibb.co/qNBWPb0/6.jpg",
-        "price": 1460
+        "price": 146
     },
     {
         "id": "el7",
@@ -58,5 +58,29 @@
         "name": "YAMAHA PACIFICA 012 WH",
         "img": "https://i.ibb.co/30qJcZX/10.jpg",
         "price": 159
+    },
+    {
+        "id": "el11",
+        "name": "FENDER SQUIER BULLET STRAT HT HSS BLK",
+        "img": "https://i.ibb.co/QJfqs4K/1.jpg",
+        "price": 136
+    },
+    {
+        "id": "el12",
+        "name": "FENDER SQUIER AFFINITY",
+        "img": "https://i.ibb.co/pKrG5ZJ/2.jpg",
+        "price": 239
+    },
+    {
+        "id": "el13",
+        "name": "IBANEZ GIO GRG121DX-BKF BLACK FLAT",
+        "img": "https://i.ibb.co/NnvcYhR/3.jpg",
+        "price": 216
+    },
+    {
+        "id": "el14",
+        "name": "EPIPHONE LES PAUL STUDIO LT EBONY",
+        "img": "https://i.ibb.co/4Tg91WL/4.jpg",
+        "price": 199
     }
 ]

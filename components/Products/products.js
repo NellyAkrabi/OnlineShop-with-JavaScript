@@ -51,8 +51,6 @@ class Products {
             `;
         });
 
-
-
         const html = `
             <ul class="products-container">
                 ${htmlCatalog}
@@ -63,4 +61,3 @@ class Products {
 };
 
 const productsPage = new Products();
-productsPage.render()

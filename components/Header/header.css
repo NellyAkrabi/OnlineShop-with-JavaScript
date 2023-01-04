@@ -6,9 +6,17 @@
     height: 50px;
     padding: var(--spacing-small);
     background-color: var(--color-medium);
+    justify-content: space-between
 }
+.header-name {
+    padding-left: var(--spacing-medium);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(172, 107, 37);
+}
+
 .header-counter {
-    margin-left:  auto;
     padding-right: var(--spacing-small);
     font-weight: bold;
     cursor: pointer;
