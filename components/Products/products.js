@@ -1,9 +1,30 @@
 
-
 class Products {
+    constructor () {
+        this.classNameActiv = 'products-element__btn_active';
+        this.labelAdd = 'Add to back';
+        this.labelRemove = 'Remove';
+    }
+
+    handleSetLocationStorage() {
+       
+    };  
+
     render() {
+        const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
+
+
         CATALOG.forEach(({id, name, img, price}) => {
+            let activeClass = "";
+            let activeText = "";
+
+            if (productsStore.indexOf(id) === -1) {
+                activeText = this.labelAdd;               
+            } else {
+                activeClass = ' ' +  this.classNameActiv;/* dobavila meyhdy classes */
+                activeText = this.labelRemove;
+            };
 
             htmlCatalog += `
                 <li class = "products-element">
@@ -12,7 +33,9 @@ class Products {
                     <span class= "products-element__price">
                         ⚡️ ${price.toLocaleString()} €
                      </span>
-                    <button class= "products-element__btn">Add to back</button>
+                    <button class= "products-element__btn ${activeClass}" onClick = "productsPage.handleSetLocationStorage()">
+                        ${activeText}
+                    </button>
                 </li>
             `;
         });
