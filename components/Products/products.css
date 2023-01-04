@@ -33,7 +33,7 @@
 }
 .products-element__btn {
     margin-top: var(--spacing-medium);
-    padding: var(--spacing-smal) var(--spacing-medium);
+    padding: var(--spacing-small) var(--spacing-medium);
     border: 1px solid var(--color-unaccent);
     border-radius: var(--border-radius);
     cursor: pointer;
