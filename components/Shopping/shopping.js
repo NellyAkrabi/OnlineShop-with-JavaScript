@@ -1,5 +1,9 @@
 class Shoppnig {
 
+    handleClear() {
+        ROOT_SHOPPING.innerHTML = '';
+    }
+
     render(){
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
@@ -21,7 +25,7 @@ class Shoppnig {
 
         const html = `
             <div class = "shopping-container">
-                <div class = "shopping__close" onclick="">
+                <div class = "shopping__close" onclick="shoppingPage.handleClear();">
 
                 </div>
                 <table >
