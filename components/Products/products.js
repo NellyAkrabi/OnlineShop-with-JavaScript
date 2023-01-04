@@ -3,7 +3,7 @@ class Products {
     constructor () {
         this.classNameActiv = 'products-element__btn_active';
         this.labelAdd = 'Add to back';
-        this.labelRemove = 'Remove from back';
+        this.labelRemove = 'Remove';
     }
 
     handleSetLocationStorage(element, id) {
@@ -15,7 +15,10 @@ class Products {
         } else {
             element.classList.remove(this.classNameActiv);
             element.innerHTML = this.labelAdd; 
-        };        
+        }; 
+
+        headerPage.render(products.length);
+
     };  
 
     render() {

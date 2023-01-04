@@ -1,10 +1,10 @@
 class Header {
 
-    render () {
+    render (count) {
         const html =`
             <div class = "header-container">
                 <div class= "header-counter">
-                    🛒77
+                    🛒${count}
                 </div>
             </div>
         `;
@@ -12,5 +12,9 @@ class Header {
     }
 };
 
+
 const headerPage = new Header();
-headerPage.render();
+
+const productsStore = localStorageUtil.getProducts();
+
+headerPage.render(productsStore.length);
