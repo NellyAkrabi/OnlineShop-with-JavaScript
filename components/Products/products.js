@@ -3,11 +3,19 @@ class Products {
     constructor () {
         this.classNameActiv = 'products-element__btn_active';
         this.labelAdd = 'Add to back';
-        this.labelRemove = 'Remove';
+        this.labelRemove = 'Remove from back';
     }
 
-    handleSetLocationStorage() {
-       
+    handleSetLocationStorage(element, id) {
+        const {pushProduct, products} = localStorageUtil.putProducts(id);
+
+        if (pushProduct) {
+            element.classList.add(this.classNameActiv);
+            element.innerHTML = this.labelRemove;
+        } else {
+            element.classList.remove(this.classNameActiv);
+            element.innerHTML = this.labelAdd; 
+        };        
     };  
 
     render() {
@@ -33,7 +41,7 @@ class Products {
                     <span class= "products-element__price">
                         ⚡️ ${price.toLocaleString()} €
                      </span>
-                    <button class= "products-element__btn ${activeClass}" onClick = "productsPage.handleSetLocationStorage()">
+                    <button class= "products-element__btn ${activeClass}" onclick = "productsPage.handleSetLocationStorage(this, '${id}')">
                         ${activeText}
                     </button>
                 </li>
