@@ -3,6 +3,9 @@
     --color-white: #fff;
     --color-unaccent: #808080;
     --color-medium: #e8e8e8;
+    --color-error-light:#f2685b;
+    --color-error-dark:#d6625c;
+
 
     --linear-gradient: linear-gradient(to right, #e2f87c, #d6f567, #c8f151, #b9ee38, #a8eb12);
 
