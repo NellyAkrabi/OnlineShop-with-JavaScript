@@ -1,11 +1,13 @@
 function render() {
 
-  productsPage.render()
+  productsPage.render();
 
   const productsStore = localStorageUtil.getProducts();
   headerPage.render(productsStore.length);
 
 };
+
+spinnerPage.render();
 
 
 let CATALOG = [];
@@ -16,8 +18,12 @@ fetch ('server/catalog.json')
 .then(res => res.json())
 .then(body => {
     CATALOG = body;
+    spinnerPage.handeleClear()
     render();
 })
+
 .catch (error =>{
     console.log('error');
-})
+});
+
+
